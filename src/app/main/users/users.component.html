@@ -1,1 +1,24 @@
-<p>users works!</p>
+<div class="userWrapper">
+  <div class="addUser">Add new User</div>
+  <input class="customInput"
+         placeholder="username"
+         type="text">
+  <input class="customInput"
+         placeholder="email"
+         type="text">
+  <input class="customInput"
+          placeholder="password"
+         type="text">
+  <button class="customButtonMain addUser">Add User</button>
+</div>
+<div class="usersListWrapper">
+  @for (user of usersList; track user; let i = $index) {
+  <div  [ngStyle]="{'background-color': i % 2 === 0 ?  'lightgray' : 'white'} "
+
+        class="singleUserWrapper">
+   {{user.name}}    {{user.email}}
+
+  </div>
+  }
+</div>
+

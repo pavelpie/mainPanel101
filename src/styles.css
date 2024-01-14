@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("assets/main101.css");
 @import "bootstrap/dist/css/bootstrap.min.css";
+@import "cssgp/dist/cssgp.css";
 
+body {
+  font-family: Lato, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
